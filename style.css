@@ -6,28 +6,123 @@ html {
   }
   
   body {
-    background: white;
-    margin: 0;
-    height: 300vh;
-    background: black
+    margin: 0; 
+    background: black;
+  }
+
+  #scrollContainer {
+    height: 1000vh;
+    background: black;
+  }
+
+  #hero {
+    width: 100%;
+  }
+
+
+  #footer {
+    /* margin-top: 100vh; */
+    width: 100%;
   }
   
   #background {
     max-width: 100vw;
     height: 100vh;
     max-height: 100vh;
-    
+    transform: translateX(-15%) scale(0.75);
   }
 
   #text1 {
     position: absolute;
-    width: 40vw;
+    height: 100%;
+    /* width: 40vw; */
     left: 60vw;
-    top: 10vh;
+    top: 30vh;
     opacity: 0;
+    font-size: 1vw;
     color: white;
-    font-size: 3vw;
   }
+
+  #label1 {
+    position: absolute;
+    height: 100%;
+    /* width: 40vw; */
+    left: 73vw;
+    top: 30vh;
+    opacity: 0;
+    font-size: 1vw;
+    color:black;
+  }
+
+
+  #label2 {
+    position: absolute;
+    height: 100%;
+    /* width: 40vw; */
+    left: 20vw;
+    top: 70vh;
+    opacity: 0;
+    font-size: 1vw;
+    color: black;
+  }
+
+  #label3 {
+    position: absolute;
+    height: 100%;
+    /* width: 40vw; */
+    left: 80vw;
+    top: 40vh;
+    opacity: 0;
+    font-size: 1vw;
+    color: black;
+  }
+
+  #label4 {
+    position: absolute;
+    height: 100%;
+    /* width: 40vw; */
+    left: 70vw;
+    top: 70vh;
+    opacity: 0;
+    font-size: 1vw;
+    color: black;
+  }
+
+  #label5 {
+    position: absolute;
+    height: 100%;
+    /* width: 40vw; */
+    left: 60vw;
+    top: 40vh;
+    opacity: 0;
+    font-size: 1vw;
+    color: black;
+  }
+
+  #text7 {
+    position: absolute;
+    height: 100%;
+    width: 35vw; 
+    left: 20vw;
+    top: 77vh;
+    opacity: 0;
+    font-size: 36px;;
+    color: white;
+  }
+
+  #text8 {
+    position: absolute;
+    height: 100%;
+    width: 35vw; 
+    left: 50vw;
+    top: 77vh;
+    opacity: 0;
+    font-size: 36px;;
+    color: white;
+  }
+
+
+  
 
     /* #box {
       position: fixed;
@@ -38,7 +133,14 @@ html {
       width: 25%;
       height: 30%;
     } */
+ 
+.overlayText {
+    position: absolute;
 
+    opacity: 0;
+    font-size: 1vw;
+    color: white;
+    } 
     
   #text2 {
     position: absolute;
@@ -48,6 +150,10 @@ html {
     opacity: 0;
     color: white;
     font-size: 3vw;
+  }
+
+  #text6 {
+    height: 100%; width: 40vw; left: 60vw; top: 30vh;
   }
 
 
@@ -66,7 +172,6 @@ html {
       left:0;
       opacity: 0;
       color: white;
-      font-size: 5vw;
       text-align: center;
       width: 100vw;
 
@@ -84,20 +189,25 @@ html {
     }
   }
 
+  canvas {
+    display: block;
+    width: 100vw;
+  }
+
 
   #canvas-wrapper {
-    position: fixed;
-    left: 50%;
+    /* position: fixed; */
+    /* left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     z-index: -1;
 
   }
 
   #container {
     margin: 0;
-    position: fixed;
+    position: static;
     width: 100vw;
     height: 100vw;
-    background: black;
+    background:black ;
   }
