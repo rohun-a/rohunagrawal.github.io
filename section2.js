@@ -5,12 +5,12 @@ var context  = canvas.getContext("2d");
 
 var currentSecondFrame = (index) => {
   if(window.innerWidth < 1000) index = 99;
-  return `./secondset/ezgif-frame-${(index).toString().padStart(3, '0')}.jpg`
+  return `./secondset/Lyve-Mobile-Array_Internal view_Frames 4 _ 5${(index-1).toString().padStart(3, '0')}.jpg`
 }
     
  
 
-  var frameSecondCount = 200;
+  var frameSecondCount = 300;
   var preloadSecondImages = () => {
     for (let i = 1; i < frameSecondCount; i++) {
       var img = new Image();
@@ -49,7 +49,7 @@ var currentSecondFrame = (index) => {
 var updateSecondImage = index => {
        if (index < 25) canvas.style.opacity = ((index)/(25));
        console.log(index);
-       if (index > 180) canvas.style.opacity = 1-((index-180)/(200-180));
+       if (index > 280) canvas.style.opacity = 1-((index-280)/(300-280));
   img.src = currentSecondFrame(index);
   context.drawImage(img, 0, 0);
 }

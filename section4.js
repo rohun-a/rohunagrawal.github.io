@@ -7,12 +7,12 @@ var currentFourthFrame = (index) => {
 
  //if(index == 182)  $('#container').css({'position': 'static', 'top': 0});     
   if(window.innerWidth < 1000) index = 91;
-  return `./fourthset/ezgif-frame-${(index).toString().padStart(3, '0')}.jpg`
+  return `./fourthset/Lyve Rackmont Back_Frames 7 _ 8_${(index).toString().padStart(5, '0')}.jpg`
 }
     
  
 
-  var frameFourthCount = 182;
+  var frameFourthCount = 270;
   var preloadFourthImages = () => {
     for (let i = 1; i < frameFourthCount; i++) {
       var img = new Image();
@@ -50,7 +50,9 @@ var currentFourthFrame = (index) => {
 
 var updateFourthImage = index => {
        if (index < 25) canvas.style.opacity = ((index)/(25));
-       if (index > 160) canvas.style.opacity = 1-((index-160)/(22));
+       console.log(1-((index-250)/(270-250)))
+
+       if (index > 250) canvas.style.opacity = 1-((index-250)/(270-250));
   img.src = currentFourthFrame(index);
   context.drawImage(img, 0, 0);
 }

@@ -5,12 +5,12 @@ var context  = canvas.getContext("2d");
 
 var currentThirdFrame = (index) => {
   if(window.innerWidth < 1000) index = 99;
-  return `./thirdset/ezgif-frame-${(index).toString().padStart(3, '0')}.jpg`
+  return `./thirdset/Lyve Rackmount_Frame 6_${(index).toString().padStart(5, '0')}.jpg`
 }
     
  
 
-  var frameThirdCount = 200;
+  var frameThirdCount = 300;
   var preloadThirdImages = () => {
     for (let i = 1; i < frameThirdCount; i++) {
       var img = new Image();
@@ -48,7 +48,7 @@ var currentThirdFrame = (index) => {
 
 var updateThirdImage = index => {
        if (index < 25) canvas.style.opacity = ((index)/(25));
-       if (index > 180) canvas.style.opacity = 1-((index-180)/(200-180));
+       if (index > 280) canvas.style.opacity = 1-((index-280)/(300-280));
   img.src = currentThirdFrame(index);
   context.drawImage(img, 0, 0);
 }
